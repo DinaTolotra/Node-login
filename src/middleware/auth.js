@@ -8,7 +8,7 @@ const route = express.Router();
 passport.use(new Strategy((username, password, done) => {
     User.findByPk(username)
     .then((user) => {
-        if (user)
+        if (user && user.password == password)
             return done(null, {name: user.name, passwd: user.password});
         else
             return done(null, false);
