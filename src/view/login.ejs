@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Login</title>
+    
+    <link rel="stylesheet" href="/library/bootstrap/bootstrap.min.css">
+    <script src="/library/bootstrap/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/library/fastbootstrap/fastbootstrap.min.css">
+
+</head>
+<body>
+    <main class="container p-5">
+        <div class="container w-50 p-10 border">
+            <form action="/login/auth" method="post">
+                <label for="username-input" class="label">Username</label>
+                <input type="text" name="username" id="username-input" class="form-control">
+                <label for="password" class="label">Password</label>
+                <input type="password" name="password" id="password" class="form-control">
+                <hr>
+                <div class="row gap-4 p-3">
+                    <button type="reset" class="btn btn-lg btn-secondary col">Reset</button>
+                    <button type="submit" class="btn btn-lg btn-primary col">Login</button>
+                </div>
+            </form>
+        </div>
+    </main>
+</body>
+</html>

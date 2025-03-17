@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Log out</title>
+    
+    <link rel="stylesheet" href="/library/bootstrap/bootstrap.min.css">
+    <script src="/library/bootstrap/bootstrap.min.js"></script>
+
+    <link rel="stylesheet" href="/library/fastbootstrap/fastbootstrap.min.css">
+
+</head>
+<body>
+    <main class="container p-5">
+        <div class="container text-center">
+            <p class="display-1 fw-bold">Log out?</p>
+            <p>You are loged in as <%= user.name %>.</p>
+        </div>
+        <form action="/logout" method="post" class="container d-flex justify-content-center gap-5 p-10">
+            <button type="submit" class="btn btn-lg btn-outline-primary">Logout</button>
+            <a href="/home"><button type="button" class="btn btn-lg btn-primary">Stay</button></a>
+        </form>
+    </main>
+</body>
+</html>
